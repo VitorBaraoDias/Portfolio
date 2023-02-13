@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/328.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h2>Vitor Barão</h2>
+        <nav>
+            <a href="" class="active">Home</a>
+            <a href="backgrounds.html">Backgrounds</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="containerHello">
+            <div class="containerHello-left">
+                <label for="">Programmer Estudent</label>
+                <br>
+                <h2 id="tittle">Hello, my name <br> is Vitor Barão</h2>
+                <br>
+                <h2 id="subTittle">Studying at the renowned professional school, ESCO and aiming to graduate in Software
+                    Engineering</h2>
+                <div class="conatinerHelloBtn">
+                    <button class="ActiveButton"><a href="about.html">About Me</a></button>
+                    <button class="DesibleButton">Git Hub</button>
+
+                </div>
+            </div>
+            <div class="containerHello-right">
+                <img class="containerHello-right img" src="assets/img/image.svg" alt="">
+            </div>
+        </div>
+        <div class="containerBody">
+            <h2>Backgrounds</h2>
+            <div class="card">
+                <div class="containerCard-left">
+                    <h2>Education</h2>
+                    <br>
+                    <label for="">This is my educational backgrounds from senior <br> high school to present.</label>
+                    <br>
+                    <button onclick="scrollElement('education')">View Education</button>
+                </div>
+                <div class="containerCard-right">
+                    <img src="assets/img/pexels-elly-fairytale-3823207 1-2.svg" alt="">
+                </div>
+            </div>
+            <div class="card inverse">
+                <div class="containerCard-left">
+                    <h2>Experience</h2>
+                    <br>
+                    <label for="">What was my roles, responsibilities and <br>deliverables in my work
+                        experiences.</label>
+                    <br>
+                    <button onclick="scrollElement('inverse')">View Experience</button>
+                </div>
+                <div class="containerCard-right">
+                    <img src="assets/img/Rectangle 7.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="containerCard-left">
+                    <h2>Skills / Activities</h2>
+                    <br>
+                    <label for="">Skills what I developed and activities what I <br> participated proactively.</label>
+                    <br>
+                    <button onclick="scrollElement('skills')">View Skills / Activities</button>
+                </div>
+                <div class="containerCard-right">
+                    <img src="assets/img/Rectangle 7-2.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <footer> <i class="fa-solid fa-envelope" style="font-size: 19px;
+            color: #565f5f;" onclick="sendEmail()"></i>
+            Vitor Barão, 2023</footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

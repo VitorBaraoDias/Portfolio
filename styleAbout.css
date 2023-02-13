@@ -1,0 +1,69 @@
+.main{
+    margin-top: 80px;
+}
+.containerAbout{
+    display: flex;
+    gap: 20px;
+}
+.containerLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerRight{
+    width: 50%;
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+}
+#tittle{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+.containerLeft label{
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    color: #828282;
+    font-size: 20px;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+
+		transform: translatey(-20px);
+	}
+	100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+
+		transform: translatey(0px);
+	}
+}
+@media only screen and (max-width:1200px){
+    .containerAbout{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .containerLeft{
+        align-self: start;
+        width: 100%;
+    }
+    .containerRight{
+        width: 100%;
+    }
+}
